@@ -4,6 +4,7 @@
 		// int v = 0b1100; // binary
     
     long longVar = 12121212121212L;
+    float floatVar = 12.12F
     
     1. signed
 			a. integral
@@ -21,3 +22,5 @@
         
     range formula ==> -2^n-1 to 0 and 2^n-1 -1
     Local variable do not have default values.
+    
+    Datatype: static, final:reference is constant,transient, volatile
