@@ -1,0 +1,26 @@
+Maven build tool
+
+Maven can be downloaded from internet and used separately. 
+Eclipse also comes with built in Maven.
+
+1. New Project->Maven Project->tick create simple project->give group id and artifact_id->Finish.
+2. pom.xml is important configuration file.
+3. Few Maven phases:- compile,test,install,deploy
+4. TO compile,right click on pom.xml->run as and Maven Build->Type Compile
+5. Change java compiler to version 8 by adding following dependency in pom.xml and right click on project->Maven->update project->Force update of snapshots and releases.
+        <build>
+			<plugins>
+				<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+		        <version>3.1</version>
+		        <configuration>
+		            <source>1.8</source>
+		        	<target>1.8</target>
+		        </configuration>
+    		</plugin>
+			</plugins>
+		</build>
+6. Many dependencies can be added to pom.xml. Check in mvnrepository. eg. Logger(log4j), Spring(Spring context), Junit,dbcp, Mysql Connector Jars.
+eg- testing, add JUnit and test with annotation @Before, @Test
+
+
